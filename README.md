@@ -6,31 +6,34 @@ Um simples app de Tarefas.
 
 Faça um clone do repositório.
 
-```
-No terminal digite o comando 'flutter pub get' para baixar as dependências.
-```
+No terminal digite o comando para baixar as dependências.
 
 ```
-No terminal digite o comando 'flutter run' para iniciar o app.
+ flutter pub get 
+```
+
+No terminal digite o comando para iniciar o app.
+
+```
+ flutter run 
 ```
 
 
 ## Arquitetura
 
 ```
-my_todo_app/
+EazyTodo/
 ├── lib/
 │   ├── app/
 │   │   └── todo_app.dart
 │   ├── models/
-│   │   └── task.dart
+│   │   └── todo.dart
 │   ├── repositories/
-│   │   └── task_repository.dart
+│   │   └── todo_repository.dart
 │   ├── screens/
-│   │   ├── home_screen.dart
-│   │   └── add_task_screen.dart
+│   │   ├── todo_list_screen.dart
 │   ├── widgets/
-│   │   └── task_tile.dart
+│   │   └── todo_list_item.dart
 │   └── main.dart
 └──
 ```
