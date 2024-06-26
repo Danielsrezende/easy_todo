@@ -34,7 +34,7 @@ EazyTodo/
 │   │   └── todo_app.dart 
 │   ├── models // Define as classes de dados do aplicativo.
 │   │   └── todo.dart 
-│   ├── repositories // Gerencia a lógica de persistência dos dados, com armazenamento local.
+│   ├── repositories // Gerencia a lógica de persistência dos dados.
 │   │   └── todo_repository.dart 
 │   ├── screens // Contém as telas do aplicativo
 │   │   ├── todo_list_screen.dart 
