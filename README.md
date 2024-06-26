@@ -12,6 +12,12 @@ SSH
 git clone git@github.com:Danielsrezende/EasyTodo.git
 ```
 
+HTTPS 
+
+```
+git clone https://github.com/Danielsrezende/EasyTodo.git
+```
+
 No terminal digite o comando para baixar as dependências.
 
 ```
