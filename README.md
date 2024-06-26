@@ -6,6 +6,12 @@ Um simples app de Tarefas.
 
 Faça um clone do repositório.
 
+SSH
+
+```
+git clone git@github.com:Danielsrezende/EasyTodo.git
+```
+
 No terminal digite o comando para baixar as dependências.
 
 ```
