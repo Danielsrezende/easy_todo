@@ -75,10 +75,10 @@ Usado para controlar o icone do app de forma flexível.
 
 ## Dispositivos usados nos testes
 
-*s24: android 14*
-*POCO M3 pro: android 14*
-*Redmi 12: android 14*
-*a53: android 14*
+**s24: android 14** <br>
+**POCO M3 pro: android 14** <br>
+**Redmi 12: android 14** <br>
+**a53: android 14** <br>
 
 
 ## Autor
