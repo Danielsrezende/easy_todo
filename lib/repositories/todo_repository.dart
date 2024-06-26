@@ -1,6 +1,6 @@
 
 import 'dart:convert';
-import 'package:todoapp/models/todo.dart';
+import 'package:easy_todo/models/todo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 const todoListKey = 'todo_list';

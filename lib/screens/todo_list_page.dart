@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp/models/todo.dart';
-import 'package:todoapp/widgets/todo_list_item.dart';
-import 'package:todoapp/repositories/todo_repository.dart';
+import 'package:easy_todo/models/todo.dart';
+import 'package:easy_todo/widgets/todo_list_item.dart';
+import 'package:easy_todo/repositories/todo_repository.dart';
 
 class TodoListPage extends StatefulWidget {
   const TodoListPage({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:todoapp/models/todo.dart';
+import 'package:easy_todo/models/todo.dart';
 
 class TodoListItem extends StatefulWidget {
   const TodoListItem({required this.todo, required this.removeTodo, required this.onCheck, super.key});
