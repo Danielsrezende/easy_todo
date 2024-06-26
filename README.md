@@ -6,37 +6,55 @@ Um simples app de Tarefas.
 
 Faça um clone do repositório.
 
-No terminal digite o comando "flutter pub get" para baixar as dependências.
+SSH
 
-No terminal digite o comando "flutter run" para iniciar o app.
+```
+git clone git@github.com:Danielsrezende/EasyTodo.git
+```
 
-##Arquitetura
+HTTPS 
 
-- EasyTodo_app/
-  - lib/
-    - app/
-      - todo_app.dart
-    - models/
-      - todo.dart
-    - repositories/
-      - todo_repository.dart
-    - screens/
-      - todo_list_page.dart.dart
-    - widgets/
-      - todo_list_item.dart
-    - main.dart
+```
+git clone https://github.com/Danielsrezende/EasyTodo.git
+```
 
-app: Contém a classe principal do aplicativo.
+No terminal digite o comando para baixar as dependências.
 
-models: Define as classes de dados do aplicativo.
+```
+ flutter pub get 
+```
 
-repositories: Gerencia a lógica de persistência dos dados, com armazenamento local.
+No terminal digite o comando para iniciar o app.
 
-screens: Contém as telas do aplicativo.
+```
+ flutter run 
+```
 
-widgets: Contém widgets reutilizáveis.
+### Links úteis
 
-main.dart: O ponto de entrada principal do aplicativo.
+Instalação do Flutter: https://docs.flutter.dev/get-started/install <br>
+Instalação do Android Studio: https://developer.android.com/studio/install <br>
+Instalação (Flutter/Android Studio) utilizando snap (Ubuntu): https://dev.to/brylie/install-flutter-on-ubuntu-2110-with-snap-and-apt-599
+
+
+## Arquitetura
+
+```
+EazyTodo/
+├── lib/
+│   ├── app // Contém a classe principal do aplicativo.
+│   │   └── todo_app.dart 
+│   ├── models // Define as classes de dados do aplicativo.
+│   │   └── todo.dart 
+│   ├── repositories // Gerencia a lógica de persistência dos dados.
+│   │   └── todo_repository.dart 
+│   ├── screens // Contém as telas do aplicativo
+│   │   ├── todo_list_screen.dart 
+│   ├── widgets // Contém widgets reutilizáveis.
+│   │   └── todo_list_item.dart
+│   └── main.dart // O ponto de entrada principal do aplicativo.
+└──
+```
 
 ## Dependências 
 
