@@ -20,7 +20,7 @@ No terminal digite o comando para iniciar o app.
 
 ### Links úteis
 
-Link de instalação do Flutter: https://docs.flutter.dev/get-started/install
+Link de instalação do Flutter: https://docs.flutter.dev/get-started/install <br>
 Link de instalação do Android Studio: https://developer.android.com/studio/install
 
 ## Arquitetura
