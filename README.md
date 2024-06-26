@@ -7,11 +7,11 @@ Um simples app de Tarefas.
 Faça um clone do repositório.
 
 ```
-No terminal digite o comando "flutter pub get" para baixar as dependências.
+No terminal digite o comando (`flutter pub get`) para baixar as dependências.
 ```
 
 ```
-No terminal digite o comando "flutter run" para iniciar o app.
+No terminal digite o comando (`flutter run"`) para iniciar o app.
 ```
 
 
