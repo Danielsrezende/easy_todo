@@ -41,8 +41,9 @@ Baixe o App: https://drive.google.com/drive/u/1/folders/1hTg84-50CJptp1nZFoSoxRN
 ## Arquitetura
 
 ```
-EazyTodo/
-├── lib/
+EazyTodo
+├── lib
+
 │   ├── app // Contém a classe principal do aplicativo.
 │   │   └── todo_app.dart 
 │   ├── models // Define as classes de dados do aplicativo.
