@@ -17,13 +17,13 @@ No terminal digite o comando "flutter run" para iniciar o app.
     - app/
       - todo_app.dart
     - models/
-      - task.dart
+      - todo.dart
     - repositories/
-      - task_repository.dart
+      - todo_repository.dart
     - screens/
-      - home_screen.dart
+      - todo_list_page.dart.dart
     - widgets/
-      - task_tile.dart
+      - todo_list_item.dart
     - main.dart
 
 app: Contém a classe principal do aplicativo.
