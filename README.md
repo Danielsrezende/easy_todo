@@ -2,7 +2,7 @@
 
 Um simples app de Tarefas.
 
-# Instalação
+## Instalação
 
 Faça um clone do repositório.
 
@@ -10,7 +10,7 @@ No terminal digite o comando "flutter pub get" para baixar as dependências.
 
 No terminal digite o comando "flutter run" para iniciar o app.
 
-# Dependências 
+## Dependências 
 
 flutter_slidable ^3.1.0: https://pub.dev/packages/flutter_slidable
 
@@ -20,7 +20,13 @@ shared_preferences ^2.2.3: https://pub.dev/packages/shared_preferences
 
 Usado para persistir dados simples no dispositivo.
 
-# Autor
+### Dependências de desenvolvimento
+
+flutter_launcher_icons "^0.13.1": https://pub.dev/packages/flutter_launcher_icons
+
+Usado para controlar o icone do app de forma flexível.
+
+## Autor
 
 Daniel Rezende
 
