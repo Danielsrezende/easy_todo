@@ -20,8 +20,10 @@ No terminal digite o comando para iniciar o app.
 
 ### Links úteis
 
-Link de instalação do Flutter: https://docs.flutter.dev/get-started/install <br>
-Link de instalação do Android Studio: https://developer.android.com/studio/install
+Instalação do Flutter: https://docs.flutter.dev/get-started/install <br>
+Instalação do Android Studio: https://developer.android.com/studio/install <br>
+Instalação utilizando snap (Ubuntu): https://dev.to/brylie/install-flutter-on-ubuntu-2110-with-snap-and-apt-599
+
 
 ## Arquitetura
 
