@@ -24,31 +24,19 @@ No terminal digite o comando para iniciar o app.
 ```
 EazyTodo/
 ├── lib/
-│   ├── app/
-│   │   └── todo_app.dart
-│   ├── models/
-│   │   └── todo.dart
-│   ├── repositories/
-│   │   └── todo_repository.dart
-│   ├── screens/
-│   │   ├── todo_list_screen.dart
-│   ├── widgets/
+│   ├── app // Contém a classe principal do aplicativo.
+│   │   └── todo_app.dart 
+│   ├── models // Define as classes de dados do aplicativo.
+│   │   └── todo.dart 
+│   ├── repositories // Gerencia a lógica de persistência dos dados, com armazenamento local.
+│   │   └── todo_repository.dart 
+│   ├── screens // Contém as telas do aplicativo
+│   │   ├── todo_list_screen.dart 
+│   ├── widgets // Contém widgets reutilizáveis.
 │   │   └── todo_list_item.dart
-│   └── main.dart
+│   └── main.dart // O ponto de entrada principal do aplicativo.
 └──
 ```
-
-app: Contém a classe principal do aplicativo.
-
-models: Define as classes de dados do aplicativo.
-
-repositories: Gerencia a lógica de persistência dos dados, com armazenamento local.
-
-screens: Contém as telas do aplicativo.
-
-widgets: Contém widgets reutilizáveis.
-
-main.dart: O ponto de entrada principal do aplicativo.
 
 ## Dependências 
 
