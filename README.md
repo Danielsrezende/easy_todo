@@ -56,6 +56,12 @@ EazyTodo/
 │   └── main.dart // O ponto de entrada principal do aplicativo.
 └──
 ```
+## Dispositivos usados nos testes
+
+**s24: android 14** <br>
+**POCO M3 pro: android 14** <br>
+**Redmi 12: android 14** <br>
+**a53: android 14** <br>
 
 ## Dependências 
 
@@ -72,14 +78,6 @@ Usado para persistir dados simples no dispositivo.
 flutter_launcher_icons "^0.13.1": https://pub.dev/packages/flutter_launcher_icons
 
 Usado para controlar o icone do app de forma flexível.
-
-## Dispositivos usados nos testes
-
-**s24: android 14** <br>
-**POCO M3 pro: android 14** <br>
-**Redmi 12: android 14** <br>
-**a53: android 14** <br>
-
 
 ## Autor
 
