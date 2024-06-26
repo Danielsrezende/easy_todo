@@ -49,14 +49,18 @@ class _TodoListItemState extends State<TodoListItem> {
                 });
                 widget.onCheck(widget.todo);
               }, ),
-              Text(
-                widget.todo.title,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                  decoration: widget.todo.checked ? TextDecoration.lineThrough : TextDecoration.none,
-                  color: Colors.black,
-                )
+              Flexible(
+                child: Text(
+                  overflow: TextOverflow.fade,
+                  widget.todo.title,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    decoration: widget.todo.checked ? TextDecoration.lineThrough : TextDecoration.none,
+                    color: Colors.black,
+                    letterSpacing: 1
+                  )
+                ),
               )
             ],
           ),
