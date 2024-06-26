@@ -10,6 +10,36 @@ No terminal digite o comando "flutter pub get" para baixar as dependências.
 
 No terminal digite o comando "flutter run" para iniciar o app.
 
+##Arquitetura
+
+EasyTodo/
+├── lib/
+│   ├── app/
+│   │   └── todo_app.dart
+│   ├── models/
+│   │   └── task.dart
+│   ├── repositories/
+│   │   └── task_repository.dart
+│   ├── screens/
+│   │   ├── home_screen.dart
+│   │   └── add_task_screen.dart
+│   ├── widgets/
+│   │   └── task_tile.dart
+│   └── main.dart
+├──
+
+app: Contém a classe principal do aplicativo.
+
+models: Define as classes de dados do aplicativo.
+
+repositories: Gerencia a lógica de persistência dos dados, com armazenamento local.
+
+screens: Contém as telas do aplicativo.
+
+widgets: Contém widgets reutilizáveis.
+
+main.dart: O ponto de entrada principal do aplicativo.
+
 ## Dependências 
 
 flutter_slidable ^3.1.0: https://pub.dev/packages/flutter_slidable
