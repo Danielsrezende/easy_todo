@@ -41,8 +41,8 @@ Baixe o App: https://drive.google.com/drive/u/1/folders/1hTg84-50CJptp1nZFoSoxRN
 ## Arquitetura
 
 ```
-EazyTodo/
-├── lib/
+EazyTodo
+├── lib
 │   ├── app // Contém a classe principal do aplicativo.
 │   │   └── todo_app.dart 
 │   ├── models // Define as classes de dados do aplicativo.
@@ -56,6 +56,12 @@ EazyTodo/
 │   └── main.dart // O ponto de entrada principal do aplicativo.
 └──
 ```
+## Dispositivos usados nos testes
+
+**s24: android 14** <br>
+**POCO M3 pro: android 14** <br>
+**Redmi 12: android 14** <br>
+**a53: android 14** <br>
 
 ## Dependências 
 
