@@ -11,7 +11,7 @@ No terminal digite o comando 'flutter pub get' para baixar as dependências.
 ```
 
 ```
-No terminal digite o comando 'flutter run*' para iniciar o app.
+No terminal digite o comando 'flutter run' para iniciar o app.
 ```
 
 
