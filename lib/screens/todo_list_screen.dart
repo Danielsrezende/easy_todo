@@ -41,7 +41,7 @@ class _TodoListPageState extends State<TodoListPage> {
                     Expanded(
                       child: TextField(
                         controller: newToDoController,
-                        textCapitalization: TextCapitalization.words,
+                        textCapitalization: TextCapitalization.sentences,
                         decoration: const InputDecoration(
                           hintText: 'Nova Tarefa',
                           border: OutlineInputBorder()),
