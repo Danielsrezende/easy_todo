@@ -12,7 +12,7 @@ No terminal digite o comando "flutter run" para iniciar o app.
 
 ##Arquitetura
 
-EasyTodo/
+EasyTodo_app/
 ├── lib/
 │   ├── app/
 │   │   └── todo_app.dart
@@ -26,7 +26,7 @@ EasyTodo/
 │   ├── widgets/
 │   │   └── task_tile.dart
 │   └── main.dart
-├──
+└── pubspec.yaml
 
 app: Contém a classe principal do aplicativo.
 
