@@ -73,6 +73,14 @@ flutter_launcher_icons "^0.13.1": https://pub.dev/packages/flutter_launcher_icon
 
 Usado para controlar o icone do app de forma flexível.
 
+## Dispositivos usados nos testes
+
+*s24: android 14*
+*POCO M3 pro: android 14*
+*Redmi 12: android 14*
+*a53: android 14*
+
+
 ## Autor
 
 Daniel Rezende
