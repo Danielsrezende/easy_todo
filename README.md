@@ -2,5 +2,9 @@
 
 Um simples app de Tarefas.
 
-## Getting Started
+#instalação
+#uso
+#contribuição
+#licença
+#autores
 
