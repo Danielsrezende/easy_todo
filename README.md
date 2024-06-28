@@ -53,6 +53,7 @@ EazyTodo
 │   │   ├── todo_list_screen.dart 
 │   ├── widgets // Contém widgets reutilizáveis.
 │   │   └── todo_list_item.dart
+│   │   └── todo_list.dart
 │   └── main.dart // O ponto de entrada principal do aplicativo.
 └──
 ```
