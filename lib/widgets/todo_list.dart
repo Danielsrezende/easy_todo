@@ -31,50 +31,49 @@ class _TodoListState extends State<TodoList> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  controller: newToDoController,
-                  textCapitalization: TextCapitalization.sentences,
-                  decoration: const InputDecoration(
-                      hintText: 'Nova Tarefa',
-                      border: OutlineInputBorder()),
-                ),
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Row(
+          children: [
+            Expanded(
+              child: TextField(
+                controller: newToDoController,
+                textCapitalization: TextCapitalization.sentences,
+                decoration: const InputDecoration(
+                  hintText: 'Nova Tarefa',
+                  border: OutlineInputBorder()),
               ),
-              const SizedBox(width: 10),
-              ElevatedButton(
-                  onPressed: saveTodo,
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple.shade400,
-                      shape: LinearBorder.start(),
-                      padding: const EdgeInsets.symmetric(vertical: 16)),
-                  child: const Icon(
-                    Icons.add,
-                    color: Colors.white,
-                  ))
+            ),
+            const SizedBox(width: 10),
+            ElevatedButton(
+              onPressed: saveTodo,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepPurple.shade400,
+                shape: LinearBorder.start(),
+                padding: const EdgeInsets.symmetric(vertical: 18),
+              ),
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
+              ))
+          ],
+        ),
+        const SizedBox(height: 10),
+        Flexible(
+          child: ListView(
+            shrinkWrap: true,
+            children: [
+              for (Todo todo in todos)
+                TodoListItem(
+                  todo: todo,
+                  removeTodo: removeTodo,
+                  onCheck: onCheck,
+                ),
             ],
           ),
-          const SizedBox(height: 10),
-          Flexible(
-            child: ListView(
-              shrinkWrap: true,
-              children: [
-                for (Todo todo in todos)
-                  TodoListItem(
-                    todo: todo,
-                    removeTodo: removeTodo,
-                    onCheck: onCheck,
-                  ),
-              ],
-            ),
-          )
-        ],
-      ),
+        )
+      ],
     );
   }
 
@@ -83,11 +82,11 @@ class _TodoListState extends State<TodoList> {
       return;
     }
     setState(() {
-      Todo todo = Todo(title: newToDoController.text, checked: false);
+      Todo todo = Todo(title: newToDoController.text, checked: false, date: DateTime.now());
       todos.insert(0, todo);
     });
-    todoRepository.saveTodoList(todos);
     newToDoController.clear();
+    todoRepository.saveTodoList(todos);
   }
 
   void removeTodo(Todo todo) {

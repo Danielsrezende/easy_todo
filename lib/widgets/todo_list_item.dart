@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:intl/intl.dart';
 import 'package:easy_todo/models/todo.dart';
 
 class TodoListItem extends StatefulWidget {
@@ -50,18 +51,28 @@ class _TodoListItemState extends State<TodoListItem> {
                 widget.onCheck(widget.todo);
               }, ),
               Flexible(
-                child: Text(
-                  overflow: TextOverflow.fade,
-                  widget.todo.title,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    decoration: widget.todo.checked ? TextDecoration.lineThrough : TextDecoration.none,
-                    color: Colors.black,
-                    letterSpacing: 1
-                  )
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(DateFormat('dd/MM/yyyy').format(widget.todo.date)),
+                      Text(
+                        overflow: TextOverflow.fade,
+                        widget.todo.title,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          decoration: widget.todo.checked ? TextDecoration.lineThrough : TextDecoration.none,
+                          color: Colors.black,
+                          letterSpacing: 1,
+                        )
+                      )
+                    ],
+                  ),
                 ),
-              )
+              ),
+
             ],
           ),
         ),
