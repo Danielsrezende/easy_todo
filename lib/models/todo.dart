@@ -1,13 +1,15 @@
 class Todo {
-  Todo({required this.title, required this.checked});
+  Todo({required this.title, required this.checked, required this.date});
 
-  String title;
   bool checked;
+  String title;
+  DateTime date;
 
   factory Todo.fromJson(Map<String, dynamic> json) {
     return Todo(
       title: json['title'] as String,
       checked: json['checked'] as bool,
+      date: DateTime.parse(json['date'])
     );
   }
 
@@ -15,6 +17,7 @@ class Todo {
     return {
       'title': title,
       'checked': checked,
+      'date': date.toIso8601String(),
     };
   }
 }
