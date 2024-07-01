@@ -22,7 +22,6 @@ Navegue até a pasta.
 
 ```
 cd easy_todo
-
 ```
 
 No terminal digite o comando para baixar as dependências.
