@@ -63,13 +63,6 @@ EazyTodo
 │   └── main.dart // O ponto de entrada principal do aplicativo.
 └──
 ```
-## Dispositivos usados nos testes
-
-**s24: android 14** <br>
-**POCO M3 pro: android 14** <br>
-**Redmi 12: android 14** <br>
-**a53: android 14** <br>
-
 ## Dependências 
 
 flutter_slidable ^3.1.0: https://pub.dev/packages/flutter_slidable
