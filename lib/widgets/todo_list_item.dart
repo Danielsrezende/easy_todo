@@ -4,7 +4,11 @@ import 'package:intl/intl.dart';
 import 'package:easy_todo/models/todo.dart';
 
 class TodoListItem extends StatefulWidget {
-  const TodoListItem({required this.todo, required this.removeTodo, required this.onCheck, super.key});
+  const TodoListItem(
+      {required this.todo,
+      required this.removeTodo,
+      required this.onCheck,
+      super.key});
 
   final Todo todo;
   final Function(Todo) removeTodo;
@@ -36,20 +40,23 @@ class _TodoListItemState extends State<TodoListItem> {
         ),
         child: Container(
           decoration: BoxDecoration(
-            color: widget.todo.checked ? Colors.grey.shade200 : Colors.deepPurple.shade50,
+            color: widget.todo.checked
+                ? Colors.grey.shade200
+                : Colors.deepPurple.shade50,
           ),
           padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 2),
           child: Row(
             children: [
               Checkbox(
                 value: widget.todo.checked,
-                activeColor:  Colors.grey,
+                activeColor: Colors.grey,
                 onChanged: (bool? value) {
-                setState(() {
-                  widget.todo.checked = value as bool;
-                });
-                widget.onCheck(widget.todo);
-              }, ),
+                  setState(() {
+                    widget.todo.checked = value as bool;
+                  });
+                  widget.onCheck(widget.todo);
+                },
+              ),
               Flexible(
                 child: Padding(
                   padding: const EdgeInsets.all(8),
@@ -58,21 +65,21 @@ class _TodoListItemState extends State<TodoListItem> {
                     children: [
                       Text(DateFormat('dd/MM/yyyy').format(widget.todo.date)),
                       Text(
-                        overflow: TextOverflow.fade,
-                        widget.todo.title,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                          decoration: widget.todo.checked ? TextDecoration.lineThrough : TextDecoration.none,
-                          color: Colors.black,
-                          letterSpacing: 1,
-                        )
-                      )
+                          overflow: TextOverflow.fade,
+                          widget.todo.title,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                            decoration: widget.todo.checked
+                                ? TextDecoration.lineThrough
+                                : TextDecoration.none,
+                            color: Colors.black,
+                            letterSpacing: 1,
+                          ))
                     ],
                   ),
                 ),
               ),
-
             ],
           ),
         ),

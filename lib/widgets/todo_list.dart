@@ -4,10 +4,8 @@ import 'package:easy_todo/widgets/todo_list_item.dart';
 import 'package:easy_todo/repositories/todo_repository.dart';
 import 'package:easy_todo/models/todo.dart';
 
-
 class TodoList extends StatefulWidget {
-  const TodoList({ super.key});
-
+  const TodoList({super.key});
 
   @override
   State<TodoList> createState() => _TodoListState();
@@ -41,22 +39,21 @@ class _TodoListState extends State<TodoList> {
                 controller: newToDoController,
                 textCapitalization: TextCapitalization.sentences,
                 decoration: const InputDecoration(
-                  hintText: 'Nova Tarefa',
-                  border: OutlineInputBorder()),
+                    hintText: 'Nova Tarefa', border: OutlineInputBorder()),
               ),
             ),
             const SizedBox(width: 10),
             ElevatedButton(
-              onPressed: saveTodo,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepPurple.shade400,
-                shape: LinearBorder.start(),
-                padding: const EdgeInsets.symmetric(vertical: 18),
-              ),
-              child: const Icon(
-                Icons.add,
-                color: Colors.white,
-              ))
+                onPressed: saveTodo,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurple.shade400,
+                  shape: LinearBorder.start(),
+                  padding: const EdgeInsets.symmetric(vertical: 18),
+                ),
+                child: const Icon(
+                  Icons.add,
+                  color: Colors.white,
+                ))
           ],
         ),
         const SizedBox(height: 10),
@@ -82,7 +79,8 @@ class _TodoListState extends State<TodoList> {
       return;
     }
     setState(() {
-      Todo todo = Todo(title: newToDoController.text, checked: false, date: DateTime.now());
+      Todo todo = Todo(
+          title: newToDoController.text, checked: false, date: DateTime.now());
       todos.insert(0, todo);
     });
     newToDoController.clear();

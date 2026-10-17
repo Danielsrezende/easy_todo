@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 import 'package:easy_todo/models/todo.dart';
 import 'package:shared_preferences/shared_preferences.dart';

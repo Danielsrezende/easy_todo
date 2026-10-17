@@ -7,10 +7,9 @@ class Todo {
 
   factory Todo.fromJson(Map<String, dynamic> json) {
     return Todo(
-      title: json['title'] as String,
-      checked: json['checked'] as bool,
-      date: DateTime.parse(json['date'])
-    );
+        title: json['title'] as String,
+        checked: json['checked'] as bool,
+        date: DateTime.parse(json['date']));
   }
 
   Map<String, dynamic> toJson() {

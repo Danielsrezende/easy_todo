@@ -9,16 +9,14 @@ class TodoListPage extends StatefulWidget {
 }
 
 class _TodoListPageState extends State<TodoListPage> {
-
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Scaffold(
-        body: Padding(
-          padding: EdgeInsets.symmetric(vertical: 25, horizontal: 15),
-          child: Center(child: TodoList()),
-          ),
-        )
-      );
+        child: Scaffold(
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 25, horizontal: 15),
+        child: Center(child: TodoList()),
+      ),
+    ));
   }
 }
